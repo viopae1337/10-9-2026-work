@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio built with HTML only.">
+  <title>Aida — Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top" class="hero">
+    <p><small>ALA-TOO COLLEGE · WEB PROGRAMMING</small></p>
+    <h1>Aida's Creative Portfolio</h1>
+    <p>Student. Curious learner. Future web developer.</p>
+    <nav aria-label="Main navigation">
+      <a href="#about">About me</a> · <a href="#skills">Skills</a> ·
+      <a href="#work">My work</a> · <a href="#contact">Contact</a>
+    </nav>
+    <p><img src="media/hero.svg" alt="A computer with code symbols beside a cup and green mountains" width="960" height="240"></p>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>01 — About Me</h2>
+      <p>Hello! I'm <strong>Aida</strong>, a student at Ala-Too College in Bishkek.</p>
+      <p>I enjoy building useful pages, taking photos and learning how the web works.<br>
+        My current goal is to create a complete portfolio with <em>clear and meaningful HTML</em>.</p>
+      <blockquote><p>Small steps, regular practice, better websites.</p></blockquote>
+      <details>
+        <summary>What am I learning this month?</summary>
+        <p>I am learning page structure, images, media and forms. Next, I want to explore CSS.</p>
+      </details>
+    </section>
+    <hr>
+
+    <section class="section" id="skills">
+      <h2>02 — Skills &amp; Learning</h2>
+      <ul>
+        <li>Semantic page structure: header, main and footer</li>
+        <li>Links, lists and images</li>
+        <li>Audio, video and accessible form labels</li>
+      </ul>
+      <p><label for="portfolio-progress">Portfolio sections completed:</label>
+        <progress id="portfolio-progress" value="3" max="5">3 out of 5</progress> <strong>3 / 5</strong></p>
+      <p><label for="html-confidence">My HTML self-assessment:</label>
+        <meter id="html-confidence" min="0" max="100" low="40" high="80" optimum="100" value="70">70 out of 100</meter> <strong>70 / 100</strong></p>
+      <p>Today's written result: <output name="practice-result">3 sections completed</output></p>
+      <table>
+        <caption><strong>My weekly learning plan</strong></caption>
+        <thead><tr><th scope="col">Day</th><th scope="col">Topic</th><th scope="col">Goal</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Monday</th><td>HTML structure</td><td>Organize my page</td></tr>
+          <tr><th scope="row">Wednesday</th><td>Media and forms</td><td>Add a contact form</td></tr>
+          <tr><th scope="row">Friday</th><td>Practice</td><td>Check and improve my work</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+
+    <section class="section" id="work">
+      <h2>03 — My Work</h2>
+      <article class="project-card">
+        <h3>My First Portfolio</h3>
+        <p><small>Started on <time datetime="2026-09-01">1 September 2026</time> · Personal project</small></p>
+        <figure>
+          <img src="media/project.svg" alt="Illustration of a simple portfolio page with a profile image and three content cards" width="680" height="220">
+          <figcaption>A simple page that presents my skills and learning journey.</figcaption>
+        </figure>
+        <p>I built this page to introduce myself and keep my work in one place.</p>
+        <ol>
+          <li>Create the header, main content and footer.</li>
+          <li>Add About, Skills, Work and Contact sections.</li>
+          <li>Test links, media files and form labels.</li>
+        </ol>
+        <details>
+          <summary>What was difficult?</summary>
+          <p>At first, I mixed up file paths. I learned to check the folder, filename and extension.</p>
+        </details>
+        <p><a href="#contact">Ask me about this project →</a></p>
+      </article>
+      <article class="project-card">
+        <h3>Media Practice</h3>
+        <p>A short sample sound:</p>
+        <audio controls preload="metadata"><source src="media/intro.wav" type="audio/wav">Your browser does not support audio.</audio>
+        <p>A short portfolio preview:</p>
+        <video controls width="560" preload="metadata" poster="media/video-poster.png"><source src="media/portfolio-demo.mp4" type="video/mp4">Your browser does not support video.</video>
+      </article>
+    </section>
+    <hr>
+
+    <section class="section" id="contact">
+      <h2>04 — Let's Connect</h2>
+      <p>Have a question about my work? Write a practice message below.</p>
+      <form>
+        <fieldset>
+          <legend>Contact form</legend>
+          <p><label for="visitor-name">Your name</label><br>
+            <input id="visitor-name" name="name" type="text" size="35" autocomplete="name" required></p>
+          <p><label for="visitor-email">Email address</label><br>
+            <input id="visitor-email" name="email" type="email" size="35" autocomplete="email" required></p>
+          <p><label for="visitor-topic">Topic</label><br>
+            <select id="visitor-topic" name="topic">
+              <option value="project">My project</option><option value="study">Learning HTML</option><option value="other">Other</option>
+            </select></p>
+          <p><label for="visitor-message">Message</label><br>
+            <textarea id="visitor-message" name="message" rows="5" cols="45" required></textarea></p>
+          <button type="submit" disabled>Send message</button>
+          <button type="reset">Clear form</button>
+          <p><small>Practice form: sending is disabled until a handler is connected.</small></p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><small>© 2026 Aida · Made with HTML · Bishkek, Kyrgyzstan</small></p>
+    <p><a href="#top">↑ Back to top</a></p>
+    <button class="link">12367676</button>
+  </footer>
+</body>
+</html>
